@@ -118,41 +118,6 @@ void Fm::initialize(){
 
     }
 
-    // test correctness
-    
-    // ifstream in("test.dat");
-
-    // string str = "";
-
-    // vector<string> pick;
-
-    // while(in >> str){
-    //     if(str != ";") {
-    //         cout << str;
-    //         pick.push_back(str);
-    //     }
-    // }
-
-    // for(string s:pick) {
-    //     int id = cellname2id_[s];
-    //     Cell& cell = cell_list_[id];
-    //     vector<int> cell_net_list = cell.getNet();
-
-    //     //int part = 1 ? 0 : cell.getPart();
-    //     cell_list_[id].move();
-
-
-    //     for(int net_id : cell_net_list){
-    //         net_list_[net_id].incPartSize(cell.getPart());
-    //         net_list_[net_id].decPartSize(!cell.getPart());
-    //     }
-
-    //     part_size_[cell_list_[id].getPart()]++;
-    //     part_size_[!cell_list_[id].getPart()]--;       
-    // }
-
-
-    // in.close();
 
 
 
@@ -409,13 +374,13 @@ void Fm::Solve(){
 
 
         
-        cout << "max_partial_gain: " << max_partial_gain << endl;
+        //cout << "max_partial_gain: " << max_partial_gain << endl;
 
         //calCutSize();
 
 
     }while(max_partial_gain > 0);
 
-    writeResult();
+    //writeResult();
 
 }
